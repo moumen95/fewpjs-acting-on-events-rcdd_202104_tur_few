@@ -28,35 +28,3 @@ function moveDodgerRight() {
     dodger.style.left = `${left + 1}px`;
   }
 }
-
-document.addEventListener("keydown", function(e) {
-  if (e.key === "ArrowUp") {
-    moveDodgerUp();
-  }
-});
-function moveDodgerUp() {
-  let leftNumbers = dodger.style.up.replace("px", "");
-  let up = parseInt(leftNumbers, 10);
- 
-  if (up > 0) {
-    dodger.style.up = `${up - 1}px`;
-  }
-}
-
-
-
-
-document.addEventListener("keydown", function(e) {
-  if (e.key === "ArrowDown") {
-    moveDodgerDown();
-  }
-});
-function moveDodgerDown() {
-  let leftNumbers = dodger.style.up.replace("px", "");
-  let up = parseInt(leftNumbers, 10);
- 
-  if (up > 0) {
-    dodger.style.up = `${up - 1}px`;
-  }
-}
-
