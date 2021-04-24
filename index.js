@@ -38,8 +38,8 @@ function moveDodgerUp() {
   let leftNumbers = dodger.style.left.replace("px", "");
   let left = parseInt(leftNumbers, 10);
  
-  if (left > 0) {
-    dodger.style.left = `${up + 1}px`;
+  if (up > 0) {
+    dodger.style.left = `${up - 1}px`;
   }
 }
 
