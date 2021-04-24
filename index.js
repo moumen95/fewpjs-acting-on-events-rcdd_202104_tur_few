@@ -35,8 +35,8 @@ document.addEventListener("keydown", function(e) {
   }
 });
 function moveDodgerUp() {
-  let leftNumbers = dodger.style.left.replace("px", "");
-  let left = parseInt(leftNumbers, 10);
+  let leftNumbers = dodger.style.up.replace("px", "");
+  let up = parseInt(leftNumbers, 10);
  
   if (up > 0) {
     dodger.style.up = `${up - 1}px`;
